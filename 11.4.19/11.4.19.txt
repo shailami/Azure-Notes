@@ -1,0 +1,5 @@
+Delegates provides you common template of businesss logic which helps to create standard that applies to all the problems.
+
+  Events & Lambdas
+Aggregate events like delegates
+

@@ -1,0 +1,13 @@
+API-interface btwn 2 applcatns purely meant for FOR EXPOSING SERVICES 
+to third party or any ther appl and code reuseability
+
+comm with dataset
+web application needs to  serve data to multiple interfaces
+
+web services are SOAP based protocol --XML driven 
+
+expose data with api's or web services(SOAP based)
+
+homework:
+google
+microsoft learn

@@ -1,0 +1,74 @@
+IAAS
+-COMPUTE
+-NETWORK
+-STORAGE
+
+UNDER STORAGE
+-FILE SHARE
+-DATABASE
+-ETC
+
+STARTING WITH STORAGE
+******************************************************************************************************************
+AZURE STORAGE
+
+DIFF KIND OF STORAGE ENTITIES
+->DISKS----persistent disks for azure iaas VM's
+standard storage disks
+
+premium storage disks
+
+
+SDD-SOLID DISK DRIVE
+HDD-HARD DISK DRIVE
+->FILES
+->BLOBS
+->TABLES
+->QUEUES
+
+
+FREE
+SHARED
+BASIC
+STANDARD
+PREMIUM
+ARE DIFF LEVEL OF SERVICES PROVIDED BY AZURE (CATEGORIZATION)
+
+MANAGED DISKS-
+
+
+
+File storage 
+
+->fully managed file shares in cloud
+->SMB and REST access
+SMB is a networking protocol that allows to configure file share 
+6 machines writing logs on central machine using file share configuration
+->"lift and shift" legacy apps
+
+
+
+Blobs storgae
+-blob stands for binary large object 
+-if we r using sql database image stored is considered as blob staorage
+-excel sheeets ,videos etc comes under blob storage
+which allows to capture any particular file structure(any kind of file format can be
+ stored for ex Google drive used to store image ,videos,excelsheets,ppts ) as a blob .
+->Block blob----sequential read write operations
+->Page blob-----random read write operation 
+->Append blob------ (appending)i.e updating in to existing record --- used in logs when suppose 
+server is up from sat to frid each day togs will be appended in same file.
+
+
+Tables
+->no-sql store
+row key and partition key
+suppose email id(always unique)can be partition key
+
+
+-Queue storage
+
+
+
+
+____________________________________________________________________________________________________

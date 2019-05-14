@@ -1,0 +1,11 @@
+https://hackernoon.com/monitoring-containerized-microservices-with-a-centralized-logging-architecture-ba6771c1971a
+
+https://www.humankode.com/asp-net-core/logging-with-elasticsearch-kibana-asp-net-core-and-docker
+
+
+cd /
+cd C:\Users\userpocaks\Downloads\EmailService\EmailService
+docker build -t emailservice .
+docker images
+docker run -it --rm -p 8000:80  emailservice:latest
+docker run -it --rm -p 8000:80  repository:tag

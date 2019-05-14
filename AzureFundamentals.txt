@@ -1,0 +1,133 @@
+Azure Stack - software driven component for creating private cloud on premise
+3 top cloud public service providers
+1.AWS
+2.AZURE
+3.GOOGLE
+
+
+characteristics of cc
+on demand
+self service
+broad network access
+resource pooling
+rapid elasticity
+measured service
+
+adv of cc
+access to broad raange of managed services
+minimized or eliminated capital expanses
+usage-based billing model
+improved agility
+
+
+opex-hiring ppl for say maintainence ,blah blah etc 
+
+
+cc-models
+public -Infrastruct,platform,application service will be provided by service provider for access and consumption
+private-privately,owned,managed cloud that offers benefits similar to public but is designed and secured for use by a single organization. 
+hybrid - binds two separate clouds public and private cloud together for specific purpose of obtaining resources from both.(COLO -COLOCATION)
+community
+
+************************************************************
+Virtualization 
+
+team A -heavy task in terms of data read write operation like transactions and will require 15 days
+team B -medium data read write and 10 day task
+team C-very less task 3 days
+
+
+3 machines
+2cores and 4 GB Ram and everyone has 20GB of hard disk for each machine 
+
+machine 1
+machine 2 
+machine 3 
+if we assign 1 machine to each team 
+underutilization of infrastructure 
+
+if we combine all 3 machines the total capacity is trippled
+
+now we have 6 cores 12GB Ram 60GB hard disk
+ we can give 3 cores to team A ,2 cores to B ,1 core to Team C
+
+this is possible with VIRTUALIZATION LAYER 
+
+
+Companies like IBM ,VMVare,HP,OpenStack-providing sw which supports virtualization
+
+Hyper-V is the virtualization layer Microsoft is providing to expose their services to world .
+
+
+Azure Regions :
+features of choosing regions:
+4 important things:
+
+1)Customers Availability:
+if maximum customers are in europe and server is in India latency in terms of responding will be more
+hence majority customer base location is imp to consider 
+2)Service LifeCycle
+Preview(beta version given to testers to test proper working) to -> GA(GENERAL Availability i.e. accessible 
+to everyone )
+if application in preview is given in producion environment it may contain some bugs 
+hence preview must be in non-production env
+so not all services are available in all regions depending on how is the success ratio of that service
+3)Compliance (terms and conditions defined by local government body or industry u r targeting)
+4)Cost : every region has diff tax,underneath infrastruct cost is different in different regions 
+
+
+
+Available regions:which are available
+Announced Regions:which are coming up
+
+Availability Zones provided: multiple zones possible in one region
+
+suppose in Region America
+we have 2 data centers
+so they are 2 zones 
+if incase 1 data center is down 
+we have another zone available.
+so minimum 2 zone must be available in 1 regions.
+
+******************************************************************************************************************
+Azure Management Tools
+-Azure Power shell
+-Azure CLI
+-Visual Studio with Azure SDK's
+-Azure Cloud Shell
+-Azure Security Center
+-Azure Advisor
+-Azure Monitor
+
+*********************************************************************************************************************
+
+Azure Management Models:
+
+Aure Resource Manager(ARM):::::::::::::::::::::::::>
+
+resource grp is a kind of folder structure
+whatever resource we r provisioning we can configure permission on top of taht
+RBAC - Role Based Access Control
+-owner
+-contributor
+-Reader
+
+3 core services
+Azure Compute Service
+Azure Network Service(CISCO largest network service provider)
+Azure Storage Service  part of IAAS .
+
+
+
+
+******************************************************************************************************************
+Assignment:
+what is Virtualization?
+
+
+
+
+
+
+
+

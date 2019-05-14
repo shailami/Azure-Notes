@@ -1,0 +1,172 @@
+
+
+
+filter
+
+built in custom filter
+[Authorize]
+
+making our own custom filter
+
+add-> folder->name as filters->add new class-> name as MyCustomFilterAttribute(built in class)->
+extend ActionFilterAttribute->alt + enter->using System.Web.Mvc (import)->in body->
+public override void OnActionExecuted(ActionExecutedContext filterContext)
+{
+var req=filterContext.HttpContext.Request; //add break point and run to check
+//Business Logic
+
+
+}
+
+appstart->has filterconfig.cs open it->by default on filter is already applied which is Handle Error -> add there 
+filter.add(new MyCustomFilterAttribute
+
+Add this above Contact method in HomeController.cs
+[MyCustomFilterAttribute]
+
+
+
+In About.cshtml
+
+@{
+var myColor="Blue";
+}
+@{
+var amounts=new  List<decimal>{100,-200,300,-400,500};
+
+<ul>
+
+@foreach(var a in amounts){
+<li>@formatAmount(a)</li>
+}
+</ul>
+}
+<div style="color:@myColor">@ViewBag.Message</div> 
+Youn are using @Request.Browser.Browser
+
+
+@* 
+this is comment in razor tag
+*@ 
+
+@helperformatAmount(decimal amount){
+var color="green";
+if(amount<0){
+color="red";
+}
+<span style="color:@color">@String.Format({"{0}:c",amount)</span>
+}
+
+
+
+in views-> folder called shared folder->inside that Layout.cshtml
+
+
+In index.cshtml
+
+<img src="blahblah" class="img-responsive img-rounded"></img>
+
+
+
+
+
+
+right click on models add a class name it as ProductDetails.cs
+in that class
+type prop and click tab key twice it will create entire line for u
+public class ProductDetails
+{
+public string Name{get;set;}
+public string Category{get;set;}
+public DateTime RegistrationDate{get;set;}
+public int ProductQty{get;set;}
+public double Price{get;set;}
+
+
+}
+
+
+
+
+go to controller add controller
+
+select mvc5controller empty and add
+name it as product controller
+
+right click on view add view template is details model is  product details and run
+
+
+in product controller
+ProductDetails prod=new ProductDetails
+{
+Name="Mobile Phone";
+Category="Electronics";
+OrderDate=DateTime.Utc.Now,
+ProdQty=2,
+Price=1000.00
+};
+public ActionResult Index(){
+return View(prod);
+}
+public ActionResult Edit(){
+return View(prod);//right click add view name is Edit model is PrdouctDetails
+}
+
+
+go to models and go to product details class
+
+above date time 
+[Display(Name="OrderDate")]
+
+above name
+[Required]   //not null
+[Display(Name="ProductName")]
+[StringLength(50)]
+
+above quantity
+[Display(Name="ProductQuantity")]
+
+above price
+[DataType(DataType.Currency)]  // for email datatype should be email for money it should be currency
+
+
+add properties
+[RegularExpression(@"\d{3,9}")]
+public string Password(get;set;)
+
+
+Always select
+"Reference script libraries" while creating/updating view with added properties cause it 
+updates the existing scaffolding environment with new features.
+
+
+Using/Creating Entity Framework
+
+In ProductDetais.cs
+create new property
+[Key]
+public string Id{get;set;}
+
+
+right click on controller and click on add Controller select MVC5 Controller with View ,using Entity Framework(3 rd one)
+
+add model class ProductDetails
+add Data Context Class for now select existing data model i.e ApplicationDbContext(...)
+name ProductDetailsController and add
+go to build and click clean solution and then add the controller if getting error
+
+go to tools go to newGetManager go to package manager console
+write enable-migrations
+press enter
+now run the application/view in browser
+if error
+write update-database 
+if error
+add-migration
+in Name write 'Id' 
+add-migration 'Id'
+
+
+Server=localhost\SQLEXPRESS;Database=master;Trusted_Connection=True;
+//homework
+//create a struture how many no of controllers and views and data model class will be needed.

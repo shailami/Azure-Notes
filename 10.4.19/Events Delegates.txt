@@ -1,0 +1,20 @@
+Event raiser
+event handler
+passing event i.e bubbling the event
+raiser and handler connected via some method
+to pass the data to event handler.
+raiser---->{(event)}<------handler
+button has a particular event (on click,roll over or onchange) handled by handler(function ,form,data,triggers) 
+and are connected through DELEGATES(communication mechanism i.e connector btwn raiser and handler in form of event data).
+DELEGATES :
+one raiser can connect with multiple handler at same time.
+raiser expect certain data or activity from handler.
+It is the reference type that defines method signature.
+
+Business UseCase:
+
+
+2 types for implementation
+delegate and multicast Delegate class
+Generic Delegates-typesafe
+

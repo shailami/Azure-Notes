@@ -1,0 +1,12 @@
+C# is pronounced as "C-Sharp". It is an object-oriented programming language provided by Microsoft that runs on .Net Framework.
+
+C# is designed for CLI (Common Language Infrastructure). CLI is a specification that describes executable code and runtime environment.
+
+NET is a framework which is used to develop software applications.
+
+It is used to build applications for web, Windows, phone and provides broad range of functionalities and support for industry standards.
+
+This framework contains large number of class libraries known as Framework Class Library (FCL).
+
+The software programs written in .NET are execute in execution environment that is called CLR (Common Language Runtime).
+

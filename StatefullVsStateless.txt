@@ -1,0 +1,19 @@
+A Stateful server remember client data (state) from one request to the next. Stateful servers, do store session state. They may, therefore, keep track of which clients have opened which files, current read and write pointers for files, which files have been locked by which clients, etc.
+A Stateless server keeps no state information.Stateless file servers do not store any session state. This means that every client request is treated independently, and not as a part of a new or existing session. 
+2)  Programming :
+
+Stateful server is harder to code.
+Stateless server is straightforward to code.
+3) Crash recovery :
+
+Stateful servers have difficult crash recovery due to loss of information.
+Stateless servers can easily recover from failure because there is no state that must be restored. 
+4) Information transfer :
+
+Using a Stateful server,file server, the client can send less data with each request.
+Using a stateless file server, the client must,specify complete file names in each request specify location for reading or writing re-authenticate for each request. 
+Advantages of both Stateful and Stateless servers:
+
+The main advantage of Stateful servers, is that they can provide better performance for clients because clients do not have to provide full file information every time they perform an operation, the size of messages to and from the server can be significantly decreased. Likewise the server can make use of knowledge of access patterns to perform read-ahead and do other optimizations. Stateful servers can also offer clients extra services such as file locking, and remember read and write positions.
+
+The main advantage of stateless servers is that they can easily recover from failure. Because there is no state that must be restored, a failed server can simply restart after a crash and immediately provide services to clients as though nothing happened. Furthermore, if clients crash the server is not stuck with abandoned opened or locked files. Another benefit is that the server implementation remains simple because it does not have to implement the state accounting associated with opening, closing, and locking of files.

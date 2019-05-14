@@ -1,0 +1,12 @@
+https://labs.azure.com/register/n3m6rcq2
+
+Different Engines of respective Browsers:
+Chrome - V8 Engine
+Internet Explorer - Chakra
+FireFox- SpiderMonkey
+Safari-JavaScript Core
+
+Difference between Web Services and API's:
+
+
+rendering engines

@@ -1,0 +1,56 @@
+Azure offers Table storage -offers No Sql database.
+query string needed for sql databases used in application
+
+
+providing pre-defined CRUD based operations -
+
+
+Components of Entity Framework:
+
+1)Entities
+-it is Relation Provider
+-Data Model Class
+-helps in Data Mapping 
+
+
+2)DbChangeTracker
+-Tracks all mapping and updates
+
+3)DbSet<T>
+gives you a Collection of dataset(Tables and all)
+
+4)DbContext/(or) Custom Context
+-Central Unit 
+-Connection String
+
+5)Entity Designer
+-
+
+
+
+SaaS-Google Docs,Office 365,CRM solutions
+PaaS-
+IaaS-Commpute as a Service 3 categories
+A-compute
+B-storage
+C-network
+
+
+
+
+
+
+
+
+
+
+
+wordpress- open source for creating blogs
+-CMS(Content Management Tool) alot of news channels and e-commerce portals use this tool.
+i me and cloud.com
+
+
+
+Assignment-
+Code First Approach
+Entity Framework 6 in plural sight

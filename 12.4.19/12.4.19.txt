@@ -1,0 +1,28 @@
+RAZER CODE
+dynamic html code
+
+Scaffolding
+
+
+ASP .net framework
+web application framework
+allows to build pplication using model view controller (MVC Design Pattern)
+adv:
+1)Application code is reuseable
+2)Controller acts as a trigger btwn View and Model
+3)Core features with MvC
+
+Cachng ,Http Handler ,Membership,Custom Providers
+most web application is stateless.
+async doesnt wait for previous request to complete
+it is ready to process/handle new requests (previous request will be stored in queue i.e. Asynchronous comm)
+stateless - state not needed to be maintained
+
+MVC - achieves separation of concerns
+
+View -UI -2 types -web form view and razor form view
+Model-Business Object or Data Transfer Object(Data Acces Layer) combined with domain-specific logic (Business Logic)
+Controller- connectivity btwn model & view 
+
+
+

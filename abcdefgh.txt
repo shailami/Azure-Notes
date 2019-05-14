@@ -1,0 +1,15 @@
+Stateless server does not maintain any client data 
+statefull server maintains client data
+it s like a black box the output of the server depends on current input
+each request is a new request
+in statefull depends on input as well as previous inputs.
+advantage of stateful
+less data needs to be transferred to the server with every request.
+disadv of stateless
+more data needs to be transferred everytime with new request
+disadv of statefull
+Crash recovery is difficult due to loss of data
+Advantage of stateless
+crash recovery is easy bcauz there is no data maintained so no loss of data
+Example of stateless server HTTP SERVER
+STATEFULL SERVER EXAMPLE FTP , SMTP ,TELNET SERVER
