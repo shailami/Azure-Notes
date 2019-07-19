@@ -9,3 +9,25 @@ docker build -t emailservice .
 docker images
 docker run -it --rm -p 8000:80  emailservice:latest
 docker run -it --rm -p 8000:80  repository:tag
+
+
+
+
+
+
+
+[?29-?05-?2019 15:37]  Kar, Archana:  
+sudo docker login -u pocappservicesregistry pocappservicesregistry.azurecr.io
+
+FNDPT5Mlxowj=IXWtq1qx9dcFU6qmLUm
+
+sudo docker tag <image> pocappservicesregistry.azurecr.io/emailservice:v1
+
+sudo docker push pocappservicesregistry.azurecr.io/emailservice:v1
+
+sudo docker pull pocappservicesregistry.azurecr.io/emailservice:v1
+
+sudo docker run -d -p 80:80 --name emailservice --restart always pocappservicesregistry.azurecr.io/emailservice:v1
+
+sudo systemctl enable docker 
+ 
